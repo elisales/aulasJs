@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade </title>
+
+
+</head>
+<body>
+    <h1> Gringo ou Br </h1>
+    Qual sua Nacionalidade  
+    <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="E aí?" onclick="mostrar()">
+    <div id= 'res'></div>
+
+    <script>
+        
+        function mostrar()
+            {
+            var txtn = document.getElementById('txtnac')
+            var res = window.document.querySelector('div#res')
+            var pais = txtn.value
+            res.innerHTML = `Você nasceu no <strong>${pais}</strong>`
+            if (pais == 'Brasil'){
+                    res.innerHTML += `<p> Você está <strong> HUEHUEBRBR </strong> `
+                } else{
+                    res.innerHTML += `<p> Você é <strong> GRINGOU </strong> `
+                }
+
+
+            }
+
+    </script>
+</body>
+</html>
